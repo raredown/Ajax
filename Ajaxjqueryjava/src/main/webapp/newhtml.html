@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function listarEquipo(url) {
+                var peticion = false;
+                peticion = new XMLHttpRequest();
+                
+                    peticion.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            myFunction(this);
+                        }
+                    };
+                
+                peticion.open("GET", "Campeonato.xml", true);
+                peticion.send();
+            }
+            function myFunction(xml) {
+                
+                var i;
+                var xmlDoc = xml.responseXML;
+                var table = "<table><tr><th>Nombe Equipo</th><th>Residente</th><th>Entrenador</th><th>Socios</th><th>Estadio</th><th>Estrella</th></tr>";
+                var x = xmlDoc.getElementsByTagName("Equipo");
+                for (i = 0; i < x.length; i++) {
+                    table += "<tr><td>" +
+                            x[i].getElementsByTagName("Nombre_eq")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("Residente")[0].childNodes[0].nodeValue +
+                            "</td><td>"+
+                            
+                            x[i].getElementsByTagName("Entrenador")[0].childNodes[0].nodeValue +
+                            "</td><td>"+
+                            
+                            x[i].getElementsByTagName("Socios")[0].childNodes[0].nodeValue +
+                            "</td><td>"+
+                            
+                            x[i].getElementsByTagName("Estadio")[0].childNodes[0].nodeValue +
+                            "</td><td>"+
+                            
+                            x[i].getElementsByTagName("Estrella")[0].childNodes[0].nodeValue +
+                            "</td></tr>" ;
+                }
+                table += "</table>";
+               // alert(table);
+                document.getElementById("demo").innerHTML = table;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="demo">TODO write content</div>
+        <button type="button" onclick="listarEquipo('url')">Equipo</button>
+    </body>
+</html>

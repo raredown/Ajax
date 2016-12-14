@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Liga>
+        <Equipo>
+            <Nombre_eq>Madrid</Nombre_eq>
+            <Residente>Madrid</Residente>
+            <Entrenador>Zidane</Entrenador>
+            <Socios>1000</Socios>
+            <Estadio>Bernabeu</Estadio>
+            <Estrella>Modrid</Estrella>
+        </Equipo>
+         <Equipo>
+            <Nombre_eq>Barcelona</Nombre_eq>
+            <Residente>Cataluña</Residente>
+            <Entrenador>Luis</Entrenador>
+            <Socios>800</Socios>
+            <Estadio>Camnou</Estadio>
+            <Estrella>Messi</Estrella>
+        </Equipo>
+         <Equipo>
+            <Nombre_eq>Extremadura</Nombre_eq>
+            <Residente>Almendralejo</Residente>
+            <Entrenador>Nuevo</Entrenador>
+            <Socios>300</Socios>
+            <Estadio>Paco</Estadio>
+            <Estrella>Willy</Estrella>
+        </Equipo>
+         <Equipo>
+            <Nombre_eq>Sevilla</Nombre_eq>
+            <Residente>Sevilla</Residente>
+            <Entrenador>NOmeacuerdo</Entrenador>
+            <Socios>400</Socios>
+            <Estadio>Pizjuan</Estadio>
+            <Estrella>Vieto</Estrella>
+        </Equipo>
+         <Equipo>
+            <Nombre_eq>Merida</Nombre_eq>
+            <Residente>Merida</Residente>
+            <Entrenador>Feo</Entrenador>
+            <Socios>1</Socios>
+            <Estadio>Romano</Estadio>
+            <Estrella>Cualquiera</Estrella>
+        </Equipo>
+         <Equipo>
+            <Nombre_eq>Aletico Madrid</Nombre_eq>
+            <Residente>Madrid</Residente>
+            <Entrenador>Cholo</Entrenador>
+            <Socios>800</Socios>
+            <Estadio>Waza</Estadio>
+            <Estrella>Griezman</Estrella>
+        </Equipo>
+    </Liga>
+</root>
